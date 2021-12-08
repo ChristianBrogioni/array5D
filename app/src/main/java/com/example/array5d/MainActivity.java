@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listaStati= (ListView)findViewById(R.id.lvStati);
-        ArrayAdapter<String> aaStati= new ArrayAdapter<String>(this, R.layout.activity_main, nazioni);
+        ArrayAdapter<String> aaStati= new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, nazioni);
         listaStati.setAdapter(aaStati);
     }
 }
