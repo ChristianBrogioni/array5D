@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/btnEsegui"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="352dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="352dp"
-        android:text="Button"
+    <ListView
+        android:id="@+id/lvFilm"
+        android:layout_width="266dp"
+        android:layout_height="524dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="124dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
