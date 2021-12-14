@@ -14,7 +14,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     private ListView listView;
 
-    String film[]= {"Interstellar", "La la land", "The lord of the rings"};
+    String film[]= new String[] {"Interstellar", "La la land", "The lord of the rings"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
