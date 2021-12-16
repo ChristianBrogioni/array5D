@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -17,7 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
     private ListView listView;
     Intent intent;
 
-    String film[]= new String[] {"Interstellar", "La la land", "The lord of the rings"};
+    String film[]= new String[] {"interstellar", "spiderman_no_way_home", "the_lord_of_the_rings"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,10 @@ public class MainActivity2 extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String titolo= (String)listView.getItemAtPosition(position);
                 Log.d("errori_nostri","posizione: " + position);
-                Toast.makeText(getApplicationContext(), titolo, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), titolo, Toast.LENGTH_LONG).show();
+
                 intent= new Intent(MainActivity2.this, MainActivity3.class);
+                intent.putExtra("titolo", titolo);
                 startActivity(intent);
             }
         });
