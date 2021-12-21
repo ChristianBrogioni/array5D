@@ -38,7 +38,7 @@ public class MainActivity2 extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(), titolo, Toast.LENGTH_LONG).show();
 
                 intent= new Intent(MainActivity2.this, MainActivity3.class);
-                intent.putExtra("titolo", titolo);
+                intent.putExtra("posizione", position);
                 startActivity(intent);
             }
         });

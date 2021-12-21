@@ -8,12 +8,12 @@
 
     <ListView
         android:id="@+id/lvFilm"
-        android:layout_width="266dp"
-        android:layout_height="524dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="83dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="363dp"
+        android:layout_height="634dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

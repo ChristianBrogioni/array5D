@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnEsegui;
+    Button esegui;
     Intent i;
 
     @Override
@@ -17,9 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnEsegui= (Button)findViewById(R.id.btnEsegui);
 
-        btnEsegui.setOnClickListener(new View.OnClickListener() {
+        esegui= (Button)findViewById(R.id.esegui);
+
+        esegui.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {

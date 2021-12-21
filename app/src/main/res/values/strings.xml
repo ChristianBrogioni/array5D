@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">array5d</string>
+    <string name="btnEsegui">Esegui</string>
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -11,27 +12,25 @@ public class MainActivity3 extends AppCompatActivity {
     ImageView locandina;
     Intent intent;
 
+    int[] arrayImmagini = {
+            R.drawable.interstellar,
+            R.drawable.spiderman_no_way_home,
+            R.drawable.the_lord_of_the_rings,
+    };
+
+    int i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        locandina= (ImageView) findViewById(R.id.imageView);
+
         intent= getIntent();
-        String titolo= intent.getStringExtra("titolo");
+        int posizione= intent.getIntExtra("posizione", 0);
+        locandina.setImageResource(arrayImmagini[posizione]);
 
-        if(titolo=="interstellar"){
-            locandina.setImageResource(R.drawable.interstellar);
-        }
-
-        if(titolo=="spiderman_no_way_home"){
-            locandina.setImageResource(R.drawable.spiderman_no_way_home);
-        }
-
-        if(titolo=="the_lord_of_the_rings"){
-            locandina.setImageResource(R.drawable.the_lord_of_the_rings);
-        }
-
-        Toast.makeText(getApplicationContext(), titolo, Toast.LENGTH_LONG).show();
 
 }
 }
